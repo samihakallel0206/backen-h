@@ -11,9 +11,9 @@ const server = http.createServer(app);
 // 🔧 CORS dynamique
 // ======================================================
 const allowedOrigins = [
-  "http://localhost:3000",
-  process.env.CLIENT_URL, // récupère directement le .env
-  "https://ton-backend.onrender.com",
+  "http://localhost:3000", // dev local
+  "https://gorgeous-pika-b5e61c.netlify.app", // ✅ ton vrai domaine Netlify
+  "https://backen-h.onrender.com", // ton backend Render
 ];
 
 app.use((req, res, next) => {
